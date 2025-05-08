@@ -17,7 +17,6 @@ module.exports = {
   },
 
   async down(queryInterface: QueryInterface) {
-    // Reverse the operations: drop constraint first, then column
     await queryInterface.sequelize.query(`
       ALTER TABLE users
       DROP FOREIGN KEY fk_user_type_id;
