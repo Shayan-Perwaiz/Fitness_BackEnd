@@ -19,6 +19,6 @@ module.exports = {
   },
 
   async down(queryInterface: QueryInterface) {
-    await queryInterface.sequelize.query(`DROP TABLE IF EXISTS userss`);
+    await queryInterface.sequelize.query(`DROP TABLE IF EXISTS users`);
   },
 };
